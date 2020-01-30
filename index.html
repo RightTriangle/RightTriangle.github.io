@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Welcome to my website!</title>
+
+<style>
+    
+body
+{
+	width: 50em;
+        margin: 0 auto;
+    	font-family: Tahoma, Verdana, Arial, sans-serif;
+	background-color:#D7FFF1;
+}    
+
+h1
+{
+	font-size:4em;
+	text-align:center;
+	color:#285943;
+}
+
+p
+{
+	font-size:2em
+}
+
+#myimg
+{
+	size:10em;
+	text-align:center;
+}
+
+</style>
+
+<link rel="shortcut icon" href="myico2.ico">
+</head>
+
+<body>
+<meta charset="utf-8">
+
+<h1>Welcome to my website!</h1>
+
+<p>这是一个测试网页</p>
+
+
+<script>
+
+var ip = "192.168.43.5"
+var addr=document.location.hostname;
+function displayDate()
+{
+	document.getElementById("demo2").innerHTML=addr;
+}
+function thank()
+{
+	document.getElementById("demo2").innerHTML="Thank you for your visiting";
+}
+function changeip()
+{
+	document.getElementById("ip")
+}
+</script> 
+
+<button type="button" onclick = "thank()" align="center">thank</button>
+
+<img id = "myimg"  onclick="displayDate()" src = "myico2.ico" width = "256" height = "256">
+
+<p id=test>ESP8266 webrepl
+<a href="http://10.11.104.169/webrepl-master/webrepl.html#192.168.0.106:8266/">ESP8266 webrepl</a>.
+</p>
+
+<p id = "ip">ip
+<a href="http://192.168.43.5/main.c">main.c</a>.
+</p>
+
+<p id = "demo"><strong id = "demo2">Thank you for your visiting.</strong></p>
+</body>
+
+</html>
